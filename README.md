@@ -18,8 +18,29 @@ CRUD é um acrônimo que representa as **quatro operações básicas** que podem
   Remover dados do sistema.  
   *Exemplo:* excluir um usuário, remover um produto do estoque.
 
+# ORM (Object-Relational Mapping)
+
+**Definição:**  
+ORM é uma técnica que permite mapear **objetos de uma linguagem de programação** para **tabelas de um banco de dados relacional**, facilitando a manipulação de dados sem escrever SQL manualmente.
+
+**Principais vantagens:**
+- Reduz a necessidade de escrever SQL.
+- Facilita a manutenção e leitura do código.
+- Permite abstração do banco de dados, tornando o código mais portável.
 
 
 ## FastAPI
 
 [Documentação FastAPI](https://fastapi.tiangolo.com/)
+
+```bash
+pip install "fastapi[standard]"
+```
+
+## SQLAlchemy
+
+[SQLAlchemy Documentação](https://www.sqlalchemy.org/)
+
+```bash
+pip install SQLAlchemy
+```
