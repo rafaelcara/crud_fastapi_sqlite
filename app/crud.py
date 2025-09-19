@@ -11,10 +11,10 @@ def create_user(db: Session, user: schemas.UserCreate):
 def get_users(db: Session, skip: int = 0, limit: int = 10):
     return db.query(models.User).offset(skip).limit(limit).all()
 
-def get_user(db: Session, user_id: int):
+def get_user(db: Session, user_id: str):
     return db.query(models.User).filter(models.User.id == user_id).first()
 
-def update_user(db: Session, user_id: int, user: schemas.UserUpdate):
+def update_user(db: Session, user_id: str, user: schemas.UserUpdate):
     db_user = get_user(db, user_id)
     if not db_user:
         return None
@@ -26,7 +26,7 @@ def update_user(db: Session, user_id: int, user: schemas.UserUpdate):
     db.refresh(db_user)
     return db_user
 
-def delete_user(db: Session, user_id: int):
+def delete_user(db: Session, user_id: str):
     db_user = get_user(db, user_id)
     if db_user:
         db.delete(db_user)

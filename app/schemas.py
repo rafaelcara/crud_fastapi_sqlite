@@ -8,12 +8,15 @@ class UserBase(BaseModel):
 class UserCreate(UserBase):
     pass
 
+class User(UserBase):
+    id: str
+
 class UserUpdate(BaseModel):
     name: Optional[str] = None
     email: Optional[str] = None
 
 class UserResponse(UserBase):
-    id: int
+    id: str
 
     class Config:
         orm_mode = True  # permite converter automaticamente objetos ORM
