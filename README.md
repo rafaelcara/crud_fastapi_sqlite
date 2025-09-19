@@ -1,4 +1,4 @@
-# CRUD
+## CRUD
 
 CRUD é um acrônimo que representa as **quatro operações básicas** que podem ser realizadas em sistemas que manipulam dados:
 
@@ -18,7 +18,7 @@ CRUD é um acrônimo que representa as **quatro operações básicas** que podem
   Remover dados do sistema.  
   *Exemplo:* excluir um usuário, remover um produto do estoque.
 
-# ORM (Object-Relational Mapping)
+## ORM (Object-Relational Mapping)
 
 **Definição:**  
 ORM é uma técnica que permite mapear **objetos de uma linguagem de programação** para **tabelas de um banco de dados relacional**, facilitando a manipulação de dados sem escrever SQL manualmente.
